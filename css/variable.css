@@ -1,0 +1,72 @@
+:root {
+    /*detail_page 상세페이지*/
+    /*폰트 사이즈*/
+    --title-font: bold 28px;
+    --title-price: 18px;
+    --total-font-bold: 24px;
+    --total-price-font: bold 24px;
+    --total-price2-font: bold 18px;
+    --product-font-bold: bold 24px;
+    --product-font-regual: 16px;
+    --info-font-bold: 24px;
+    --info-font-regual: 14px;
+    /*footer*/
+    --footer-font-regual: 14px;
+    --footer-font-smal: 13px;
+    --footer-text-color: #ffffff;
+    --footer-text-sub-color: #dbdbdb;
+    --footer-line-color: F1F1F5;
+    --footer-icon-size: 20px;
+    --footer-font-call: bold 24px;
+    --footer-button-font: 12px;
+    --footer-button-padding: 3px 8px;
+    --footer-button-border: 1px solid #fff;
+    /*셀렉트*/
+    --select-box: 12px 16px;
+    --select-active-border: #111111;
+    --select-hover-background: #f7f7fb;
+    --select-gap: 12px;
+    --select-spacing-top: 12px;
+    --select-spacing-bottom: 30px;
+    --main-blue-color: #00a0dd;
+    --sub-yellow-color: #fcd105;
+    /*폰트 칼라*/
+    --main-text-color: #111111;
+    --sub1-text-color: #505050;
+    --sub2-text-color: #767676;
+    --sub3-text-color: #dbdbdb;
+    /*라인 칼라*/
+    --black-line-color: #111111;
+    --sub1-line-color: #e5e5ec;
+    --sub2-line-color: #f1f1f5;
+    /*Bg 칼라*/
+    --gray-bg-color: #f4f4f4;
+    /*셀렉트 인풋 칼라*/
+    --select-input-color: #e5e5ec;
+    /*폰트 사이즈*/
+    --font-family: pretandard;
+    --font-size-small: 13px;
+    --font-size-base: 16px;
+    --font-size-large: 24px;
+    --line-height-base: 1.5;
+    /*간격*/
+    --spacing-small: 8px;
+    --spacing-medium: 12px;
+    --spacing-large: 32px;
+    /*버튼 스타일*/
+    --button-font-size: bold 16px;
+    --button-padding: 10px 20px;
+    --button-radius: 6px;
+    --button-gap: 8px;
+  
+    /*아이콘*/
+    --icon-size-small: 26.53px;
+    --icon-size-medium: 32px;
+    --icon-size-large: 36px;
+    --icon-color: #111111;
+    /*인풋*/
+  
+    /*박스 쉐도우*/
+    --box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  }
+  
