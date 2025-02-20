@@ -71,23 +71,42 @@
               <!-- 분단줄 -->
               <hr />
               <!-- 제품 옵션선 택 -->
-              <div class="productMenu-top2">
-                <div class="option1">
-                  <input type="" />
-                </div>
-                <div class="option2">
-                  <input type="" />
-                </div>
+              <div class="productChoose">
+                <div class="option-box" id="option1-box" onclick="toggleDropdown('option1-dropdown', 'option1-arrow')" tabindex="0">
+                  <span id="option1-text">[필수] 옵션을 선택해주세요</span>
+                  <span class="arrow" id="option1-arrow">∨</span>
+                  <div id="option1-dropdown" class="dropdown">
+                      <div onclick="selectOption('option1-text', '옵션 1A', 'option1-arrow')">옵션 1A</div>
+                      <div onclick="selectOption('option1-text', '옵션 1B', 'option1-arrow')">옵션 1B</div>
+                  </div>
               </div>
+              
+              <div class="option-box" id="option2-box" onclick="toggleDropdown('option2-dropdown', 'option2-arrow')" tabindex="0">
+                  <span id="option2-text">[필수] 옵션을 선택해주세요</span>
+                  <span class="arrow" id="option2-arrow">∨</span>
+                  <div id="option2-dropdown" class="dropdown">
+                      <div onclick="selectOption('option2-text', '옵션 2A', 'option2-arrow')">옵션 2A</div>
+                      <div onclick="selectOption('option2-text', '옵션 2B', 'option2-arrow')">옵션 2B</div>
+                  </div>
+              </div>
+              </div>
+
               <hr>
               <!-- 제품 수량선택 -->
               <div class="productMenu-top3">
-                <p>Total</p>
-              <div class="productMenu-top3Detail">
-
+                <div class="quantity">
+                  <p>TOTAL</p>
+                </div>
+                <div class="quantity-container">
+                  <button class="quantity-btn" onclick="changeQuantity(-1)">−</button>
+                  <input type="text" class="quantity-input" id="quantity" value="1" readonly>
+                  <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
               </div>
-            <button class="cart">장바구니</button>
-          <button class="purchase">구매하기</button></div>
+              <div class="choose-btn">
+                <button class="cart">장바구니</button>
+                <button class="purchase">구매하기</button>
+              </div>
+              </div>
             </div>
           </div>
         </div>
@@ -226,5 +245,31 @@
         </div>
       </div>
     </div>
+    <script>
+      function changeQuantity(amount) {
+          let quantityInput = document.getElementById('quantity');
+          let currentValue = parseInt(quantityInput.value);
+          let newValue = currentValue + amount;
+
+          if (newValue < 1) newValue = 1; // 최소 수량 제한
+          quantityInput.value = newValue;
+      }
+      function toggleDropdown(dropdownId, arrowId) {
+            let dropdown = document.getElementById(dropdownId);
+            let arrow = document.getElementById(arrowId);
+            if (dropdown.style.display === 'block') {
+                dropdown.style.display = 'none';
+                arrow.innerText = '∨';
+            } else {
+                dropdown.style.display = 'block';
+                arrow.innerText = 'ᴧ';
+            }
+        }
+
+        function selectOption(textId, value, arrowId) {
+            document.getElementById(textId).innerText = value;
+            document.getElementById(arrowId).innerText = '∨';
+        }
+  </script>
   </body>
 </html>
