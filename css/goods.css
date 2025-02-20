@@ -99,6 +99,7 @@ h1,
 /*굿즈 리스트*/
 .item {
   width: 100%;
+  background: url(../images/icon/tengu_bg.png) no-repeat;
 }
 h2 {
   font-size: 32px;
@@ -227,28 +228,57 @@ h3,
   position: relative;
   display: flex;
 }
+.footerlogo {
+  margin-top: 25px;
+  margin-left: 10px;
+}
 .footer-bt-left ul li {
   font-size: 13px;
-  margin: 5px;
+  margin: 15px;
 }
 .footer-bt-right {
+  display: block;
   position: absolute;
   right: 0px;
+  text-align: right;
 }
 .sns {
+  padding-top: 100px;
   display: flex;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  gap: 20px;
 }
+
 .sns li {
-  padding: 10px;
+  display: block;
 }
-h4 {
+.footer-bt-right span {
   font-size: var(--info-font-bold);
+  display: inline-block;
+  margin-bottom: 10px;
 }
 .footer-bt-right p {
   font-size: var(--info-font-regual);
+  margin-bottom: 10px;
 }
-.footer-box
+.footer-box {
+  display: flex;
+  padding-left: 50px;
+}
+.footer-box li {
+  font-size: 12px;
+  display: inline-block;
+  border: 1px solid;
+  padding: 5px;
+  margin: 5px 5px;
+}
 /*반응형*/
+@media screen and (max-width: 1600px) {
+  .visual-img {
+    top: 40%;
+  }
+}
 @media screen and (max-width: 1400px) {
   .main-visual-left > p,
   h1,
@@ -266,6 +296,9 @@ h4 {
     left: 4%;
     padding-bottom: 8px;
   }
+  .visual-img {
+    top: 30%;
+  }
 }
 @media screen and (max-width: 1000px) {
   .main-visual-left > p,
@@ -275,12 +308,21 @@ h4 {
     left: -2%;
     padding-bottom: 1px;
   }
+  .footer-top ul li {
+    padding: 0 15px;
+  }
 }
 @media screen and (max-width: 900px) {
   h1 {
     scale: 60%;
     left: -12%;
     padding-bottom: 0px;
+  }
+  .footer-top ul li {
+    font-size: 12px;
+  }
+  .visual-img {
+    top: 20%;
   }
 }
 @media screen and (max-width: 768px) {
