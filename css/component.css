@@ -1,5 +1,19 @@
 @charset "uft-8";
-.button{
-    cursor: pointer;
-    border: none;
+.button {
+  cursor: pointer;
+  border: none;
+}
+.main_title {
+  font-weight: bold;
+  font-size: 46px;
+  padding-top: 80px;
+  text-align: center;
+}
+.main_title_txt {
+  font-size: 18px;
+  margin-top: 14px;
+  text-align: center;
+}
+.inner {
+  max-width: 1320px;
 }
