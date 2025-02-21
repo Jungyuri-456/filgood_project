@@ -45,14 +45,20 @@
     <!-- css -->
     <!-- reset.css -->
     <link rel="stylesheet" href="css/reset.css" />
+    <!--헤더 css-->
+    <link rel="stylesheet" href="css/header.css" />
     <!--푸터 css-->
     <link rel="stylesheet" href="css/footer.css" />
+    <!--섹션2 css-->
+    <link rel="stylesheet" href="css/section2.css" />
     <!-- 스와이퍼 라이브러리cdn -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- js -->
     <!-- 제이쿼리 cdn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- 스와이퍼 cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- 팀원 js -->
   </head>
@@ -60,6 +66,7 @@
     <!-- 전체레이아웃 -->
     <div class="wrap">
       <!-- 상단 -->
+
       <!-- 섹션1 -->
 
       <!-- 섹션2 -->
@@ -161,46 +168,180 @@
                 <li>이메일: Fill_good@naver.com</li>
                 <li>Copyright ⓒ FILLGOOD DESIGNER ALL RIGHTS RESERVED.</li>
               </ul>
+
+      <header>
+        <div class="header_inner">
+          <div class="top-bar">
+            <div class="top-bar-left">
+              <a href="#">
+                <img src="images/logo/Group 1707481535.png" alt="topbarlogo" class="top-bar-logo" />
+              </a>
             </div>
-            <div class="footer-bt-right">
-              <ul class="sns">
+            <div class="top-bar-right">
+              <ul class="bar-menu-list">
                 <li>
-                  <a href="https://www.instagram.com/official.obc/" target="_blank">
-                    <img src="images/icon/인스타그램.png" alt="insta" />
+                  <a href="#" id="bar-text">Home</a>
+                </li>
+                <li>
+                  <a href="#" id="bar-text">Product</a>
+                </li>
+                <li>
+                  <a href="#" id="bar-text">Goods</a>
+                </li>
+                <li>
+                  <a href="#" id="bar-text">Event</a>
+                </li>
+              </ul>
+              <ul class="bar-icon-list">
+                <li>
+                  <a href="#">
+                    <img src="images/icon/마이페이지.png" alt="" />
                   </a>
                 </li>
-
                 <li>
-                  <a href="https://www.facebook.com/OrientalBrewery/" target="_blank">
-                    <img src="images/icon/페이스북.png" alt="face" />
+                  <a href="#">
+                    <img src="images/icon/장바구니w.png" alt="" />
                   </a>
                 </li>
-
                 <li>
-                  <a href="https://www.youtube.com/@obc.official" target="_blank">
-                    <img src="images/icon/유튜브.png" alt="yutube" />
-                  </a>
-                </li>
-
-                <li>
-                  <a href="https://www.kakaocorp.com/page/service/service/KakaoPage']" target="_blank">
-                    <img src="images/icon/카카오톡.png" alt="kakaotalk" />
-                  </a>
-                </li>
-
-                <li>
-                  <a href="https://x.com/ob_filgood" target="_blank">
-                    <img src="images/icon/X.png" alt="x" />
+                  <a href="#">
+                    <img src="images/icon/하트w.png" alt="" />
                   </a>
                 </li>
               </ul>
-              <span>1234-5678</span>
-              <p>오전9시~오후6시(토요일,공휴일 휴뮤)</p>
-              <ul class="footer-box">
-                <li>1:1문의하기</li>
-                <li>자주 묻는 질문</li>
-              </ul>
             </div>
+          </div>
+        </div>
+      </header>
+      <!-- 섹션1 -->
+      <!-- Swiper -->
+      <div class="swiper visual1Swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/section1sw1.png" alt="vssw1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/section1sw2.png" alt="vssw2" />
+          </div>
+        </div>
+      </div>
+      <!-- 섹션2 -->
+      <div class="section2">
+        <h1 class="main_title">왜 필굿인가요?</h1>
+        <h2 class="main_title_txt" id="section2-subtitle">가격은 DOWN, 기분은 UP 필굿만의 특별한 가치</h2>
+        <ul class="section2-list">
+          <li>
+            <img src="images/section2-1.png" alt="section2-1" />
+            <p>놀라운 가성비</p>
+            <span>누구나 부담없이 즐길 수 있는 가격</span>
+          </li>
+          <li>
+            <img src="images/section2-2.png" alt="section2-2" />
+            <p>상쾌한 청량감</p>
+            <span>깔끔하고 청량한 목넘김</span>
+          </li>
+          <li>
+            <img src="images/section2-3.png" alt="section2-3" />
+            <p>오비맥주</p>
+            <span>오비맥주 90년 양조기술 노하우</span>
+          </li>
+        </ul>
+        <!--모바일-->
+        <ul class="section2-list-mb">
+          <li>
+            <img src="images/section2-1.png" alt="section2-1" />
+            <p>놀라운 가성비</p>
+            <span>누구나 부담없이 즐길 수 있는 가격</span>
+          </li>
+          <li>
+            <img src="images/section2-2.png" alt="section2-2" />
+            <p>상쾌한 청량감</p>
+            <span>깔끔하고 청량한 목넘김</span>
+          </li>
+          <li>
+            <img src="images/section2-3.png" alt="section2-3" />
+            <p>오비맥주</p>
+            <span>오비맥주 90년 양조기술 노하우</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 섹션3 -->
+      <h1 class="main_title">필굿의 3종 세뚜 소개합니다</h1>
+      <!-- 섹션4 -->
+
+      <h1>시원한 순간을 더 특별하게</h1>
+      <article>
+        <img src="" alt="" />
+      </article>
+
+      <!-- 섹션5 -->
+    </div>
+    <!-- 하단 -->
+    <div class="goods-main-footer">
+      <div class="footer-line"></div>
+      <div class="footer_inner">
+        <div class="footer-top">
+          <ul>
+            <li>회사소개</li>
+            <li>개인정보처리방침</li>
+            <li>영상정보처리기기운영 관리방침</li>
+            <li>이용약관</li>
+            <li>청소년보호방침</li>
+            <li>입점/제휴문의</li>
+            <li>대량문의</li>
+          </ul>
+        </div>
+        <div class="footer-bt">
+          <div class="footer-bt-left">
+            <img src="images/logo/footerlogo.png" alt="footerlogo" class="footerlogo" />
+            <ul>
+              <li>대표이사: 홍길동</li>
+              <li>상호명: 오비맥주 주식회사</li>
+              <li>사업자등록번호 : 123-45-67890</li>
+              <li>개인정보보호책임자 : 홍길동</li>
+              <li>이메일: Fill_good@naver.com</li>
+              <li>Copyright ⓒ FILLGOOD DESIGNER ALL RIGHTS RESERVED.</li>
+            </ul>
+          </div>
+          <div class="footer-bt-right">
+            <ul class="sns">
+              <li>
+                <a href="https://www.instagram.com/official.obc/" target="_blank">
+                  <img src="images/icon/인스타그램.png" alt="insta" />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.facebook.com/OrientalBrewery/" target="_blank">
+                  <img src="images/icon/페이스북.png" alt="face" />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.youtube.com/@obc.official" target="_blank">
+                  <img src="images/icon/유튜브.png" alt="yutube" />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.kakaocorp.com/page/service/service/KakaoPage']" target="_blank">
+                  <img src="images/icon/카카오톡.png" alt="kakaotalk" />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://x.com/ob_filgood" target="_blank">
+                  <img src="images/icon/X.png" alt="x" />
+                </a>
+              </li>
+            </ul>
+            <span>1234-5678</span>
+            <p>오전9시~오후6시(토요일,공휴일 휴뮤)</p>
+            <ul class="footer-box">
+              <li>1:1문의하기</li>
+              <li>자주 묻는 질문</li>
+            </ul>
           </div>
         </div>
       </div>
