@@ -8,6 +8,9 @@ ul,
 li {
   list-style: none;
 }
+a{
+  text-decoration: none;
+}
 .inner {
   max-width: 1320px;
   margin: 0 auto;
@@ -156,13 +159,17 @@ header {
   padding: 10px;
   margin: 10px 0;
   cursor: pointer;
-  width: 100%;
+  width: 250px;
   position: relative;
   background: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 10px;
+  transition: border-radius 0.2s;
+}
+.option-box.active {
+  border-radius: 10px 10px 0 0;
 }
 .option-box:focus, .option-box:active {
   border: 1px solid black;
@@ -173,11 +180,13 @@ header {
   position: absolute;
   top: 100%;
   left: 0;
-  border: 1px solid #000000;
+  border: 1px solid #ccc;
   padding: 0;
-  width: 100%;
+  width: 250px;
   background: #f9f9f9;
   z-index: 1000;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
 }
 .dropdown div {
   padding: 10px;
@@ -269,12 +278,112 @@ header {
 
 
 /* 중간-상세페이지 */
-.cups{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 50px;
+.contain2{
+  
+  background-color: rgb(255, 255, 255);
 }
-.cups li .blue a{
-  width: 20%;
+.cups {
+  padding-top: 10%;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+
+  gap: 5%;
+  background-color: rgb(215, 250, 217);
+}
+
+
+.cups li{
+  width: 50%;
   background-color: pink;
+  margin: 0 auto;
+}
+.cups li a img{
+  position: relative;
+  width: 100%;
+
+}
+.cups a {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 가로 중앙 정렬 */
+  text-align: center; /* 텍스트 정렬 */
+}
+/* 회색칠구배경*/
+
+
+
+/* 제품설명 */
+.productDetail{
+  padding-top: 4%;
+  text-align: center;
+}
+.productDetail span{
+  display: block;
+  padding-bottom: 1%;
+
+}
+
+/* 중간-제품사항 */
+.contain3D {
+  display: flex;
+  gap: 20px; /* 좌우 간격 조절 */
+}
+
+.contain3D1, .contain3D2 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contain3D1 li, .contain3D2 li {
+  display: flex;
+  align-items: center;
+  height: 40px; /* 동일한 높이 설정 */
+  line-height: 40px; /* 텍스트가 수직 중앙 정렬되도록 */
+}
+
+
+.contain4D {
+  display: flex;
+  gap: 20px; /* 좌우 간격 조절 */
+  align-items: start; /* 상단 정렬 */
+}
+
+.contain4D1 {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contain4D1 li:first-child {
+  width: 250px; /* 제목 부분 고정 너비 설정 */
+  font-weight: bold; /* 강조 효과 */
+  flex-shrink: 0; /* 줄바꿈 방지 */
+}
+
+.contain4D1 li:last-child {
+  flex: 1; /* 남은 공간 차지 */
+  line-height: 1.5; /* 가독성 조정 */
+}
+
+
+/* 실험 */
+.chilguBg {
+  position: absolute; /* 레이아웃과 독립적으로 배치 */
+  bottom: -800px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  text-align: center;
+  z-index: 0; /* 모든 요소 뒤로 */
+}
+
+.chilguBg img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  opacity: 0.8;
 }
