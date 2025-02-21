@@ -41,6 +41,7 @@
     --sub2-line-color: #f1f1f5;
     /*Bg 칼라*/
     --gray-bg-color: #f4f4f4;
+    --blue-bg-color: #EFF9FD;
     /*셀렉트 인풋 칼라*/
     --select-input-color: #e5e5ec;
     /*폰트 사이즈*/
@@ -67,7 +68,7 @@
     /*인풋*/
   
     /*박스 쉐도우*/
-    --box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    
     --box-shadow: 0 8px 16px  rgba(0, 0, 0, 0.02);
   }
   

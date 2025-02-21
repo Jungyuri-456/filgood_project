@@ -1,0 +1,52 @@
+@charset "utf-8";
+.section5_bg{
+    background-color: var(--blue-bg-color);
+}
+.section5 article{
+    padding-left: 20px;
+    display: flex;
+    gap: 14px;
+    margin-top: 45px;
+    padding-bottom: 95px;
+}
+.promosion{
+    width: 632px;
+    height: 338px;
+    
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    background-color: #fff;
+}
+.promosion_banner{
+width: 100%;
+height: calc(100% /2)
+}
+.promosion_banner img{
+    width: 100%;
+    height: 100%;
+}
+.promosion_txt{
+    margin-top: 24px;
+    margin-left: 24px;
+}
+.promosion_txt h4{
+    font-weight: bold;
+    font-size: 18px;
+}
+.promosion_txt p{
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--sub1-text-color);
+    line-height: 40px;
+    
+}
+.promosion_btn{
+    margin-top: 24px;
+    background-color: var(--main-text-color);
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
