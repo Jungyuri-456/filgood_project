@@ -35,11 +35,11 @@
           </div>
         </div>
       </header>
-
+<!-- 
 
       <div class="chilguBg">
-        <img src="images/goods/필구하얀선배경.png" alt="칠구">
-      </div>
+        <img src="images/Character/dp_green_1.png" alt="칠구">
+      </div> -->
 
       
       <!-- 중간 -->
@@ -59,11 +59,11 @@
                 <div class="productName"><h2>머그라-굿</h2></div>
                 <div class="productPriceShare">
                   <!-- 상품가격 -->
-                  <div class="prodcutPrice">
+                  <div class="productPrice">
                     <span>18,000원</span>
                   </div>
                   <!-- 상품공유 -->
-                  <div class="prodcutShare">
+                  <div class="productShare">
                     <ul class="Picon">
                       <li>
                         <a href="#"><img src="images/icon/하트b.png" alt="하트" /></a>
@@ -77,41 +77,42 @@
               </div>
               <!-- 분단줄 -->
               <hr />
-              <!-- 제품 옵션선 택 -->
-              <div class="productChoose">
-                <div class="option-box" id="option1-box" onclick="toggleDropdown('option1-box', 'option1-dropdown', 'option1-arrow')" tabindex="0">
-                  <span id="option1-text">[필수] 옵션을 선택해주세요</span>
-                  <span class="arrow" id="option1-arrow">∨</span>
-                  <div id="option1-dropdown" class="dropdown">
-                      <div onclick="selectOption('option1-text', '옵션 1A', 'option1-arrow', 'option1-box')">옵션 1A</div>
-                      <div onclick="selectOption('option1-text', '옵션 1B', 'option1-arrow', 'option1-box')">옵션 1B</div>
-                  </div>
-              </div>
-              
-              <div class="option-box" id="option2-box" onclick="toggleDropdown('option2-box', 'option2-dropdown', 'option2-arrow')" tabindex="0">
-                  <span id="option2-text">[필수] 옵션을 선택해주세요</span>
-                  <span class="arrow" id="option2-arrow">∨</span>
-                  <div id="option2-dropdown" class="dropdown">
-                      <div onclick="selectOption('option2-text', '옵션 2A', 'option2-arrow', 'option2-box')">옵션 2A</div>
-                      <div onclick="selectOption('option2-text', '옵션 2B', 'option2-arrow', 'option2-box')">옵션 2B</div>
-                  </div>
-              </div>
-              </div>
-
+              <ul class="optionBar">
+                <li>
+                  <select name="character_P" id="character_P">
+                    <option>[필수] 옵션을 선택 해주세요</option>
+                    <option value="filgu">[필구] 먹으라-굿</option>
+                    <option value="tengu">[텐구] 먹으라-굿</option>
+                    <option value="chilgu">[칠구] 먹으라-굿</option>
+                  </select>
+                </li>
+                </li>
+                <li>
+                  <select name="bundle" id="bundle">
+                    <option>[필수] 구성을 선택 해주세요</option>
+                    <option value="bundleCheck">[세트] 필구 + 텐구 + 칠구(30,300원 추가)</option>
+                    <option value="bundleNone">선택안함</option>
+                  </select>
+                </li>
+              </ul>
               <hr>
-              <!-- 제품 수량선택 -->
-              <div class="productMenu-top3">
-                <div class="quantity">
-                  <p>TOTAL</p>
+              <div class="totalCount">
+                <h2>TOTAL</h2>
+                <div class="countProduct-btn">
+                  <div class="countProduct-btn">
+                    <button class="minus">-</button>
+                    <span class="count">1</span>
+                    <button class="plus">+</button>
                 </div>
-                <div class="quantity-container">
-                  <button class="quantity-btn" onclick="changeQuantity(-1)">−</button>
-                  <input type="text" class="quantity-input" id="quantity" value="1" readonly>
-                  <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+                <div class="countProduct">
+                  18,000원
+                </div>
+                
+                </div>
               </div>
               <div class="choose-btn">
-                <button class="cart">장바구니</button>
-                <button class="purchase">구매하기</button>
+                <button class="cart"><a href="">장바구니</a></button>
+                <button class="purchase"><a href="">구매하기</a></button>
               </div>
               </div>
             </div>
@@ -120,6 +121,7 @@
       </div>
 
       <!-- 중간-상세페이지 -->
+    <div class="explanation">
       <div class="contain2">
         <div class="inner">
           <!-- 제품이미지 : 컵들 -->
@@ -150,7 +152,7 @@
       <div class="contain3">
         <div class="inner">
           <h2>상품제공정보고시</h2>
-          <hr />
+          <div class="divider"></div>
           
           <div class="contain3D">
 
@@ -170,7 +172,9 @@
               <li>전자레인지사용, 식기세척기사용, 오븐사용가능</li>
             </ul>
           </div>
-          <hr>
+          <div class="gray-line">
+            <hr>
+          </div>
         </div>
       </div>
       
@@ -178,7 +182,7 @@
       <div class="contain4">
         <div class="inner">
           <h2>거래관련 기타 유의사항</h2>
-          <hr />
+          <div class="divider"></div>
           <div class="contain4D">
             <ul class="contain4D1">
               <li>환불 기간 및 지연에 따른 배상</li>
@@ -186,11 +190,15 @@
                 상품불량, 상품 정보 상이 등 상품의 표시/광고 내용과 다르거나 계약 내용과 다르게 이행된 때에는 상품을
                 공급받은 날부터 3개월 이내, 그 사실을 안 날 또는 알 수 있었던 날부터 30일 이내에 반품 신청을<br />
                 할 수 있습니다.
+                
               </li>
             </ul>
+            
           </div>
+          <hr>
         </div>
 
+      </div>
       </div>
 
       <!-- 하단 -->
@@ -267,30 +275,78 @@
           </div>
     </div>
     <script>
-      function changeQuantity(amount) {
-          let quantityInput = document.getElementById('quantity');
-          let currentValue = parseInt(quantityInput.value);
-          let newValue = currentValue + amount;
+document.addEventListener("DOMContentLoaded", function () {
+    const minusBtn = document.querySelector(".minus");
+    const plusBtn = document.querySelector(".plus");
+    const countSpan = document.querySelector(".count");
+    const countProduct = document.querySelector(".countProduct");
+    const cartBtn = document.querySelector(".cart");
+    const purchaseBtn = document.querySelector(".purchase");
 
-          if (newValue < 1) newValue = 1; // 최소 수량 제한
-          quantityInput.value = newValue;
-      }
-      function toggleDropdown(dropdownId, arrowId) {
-            let dropdown = document.getElementById(dropdownId);
-            let arrow = document.getElementById(arrowId);
-            if (dropdown.style.display === 'block') {
-                dropdown.style.display = 'none';
-                arrow.innerText = '∨';
-            } else {
-                dropdown.style.display = 'block';
-                arrow.innerText = 'ᴧ';
-            }
-        }
+    let count = 1; // 초기 수량
+    const pricePerUnit = 18000; // 개당 가격
 
-        function selectOption(textId, value, arrowId) {
-            document.getElementById(textId).innerText = value;
-            document.getElementById(arrowId).innerText = '∨';
+    // 가격 업데이트 함수
+    function updatePrice() {
+        const totalPrice = count * pricePerUnit;
+        countProduct.textContent = totalPrice.toLocaleString() + "원";
+    }
+
+    minusBtn.addEventListener("click", function () {
+        if (count > 1) {
+            count--;
+            countSpan.textContent = count;
+            updatePrice();
         }
+    });
+
+    plusBtn.addEventListener("click", function () {
+        count++;
+        countSpan.textContent = count;
+        updatePrice();
+    });
+
+    // 장바구니 또는 구매하기 버튼 클릭 시 값 초기화
+    function resetValues() {
+        count = 1;
+        countSpan.textContent = count;
+        updatePrice();
+    }
+
+    cartBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        resetValues();
+    });
+
+    purchaseBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        resetValues();
+    });
+
+    updatePrice(); // 초기 가격 설정
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const characterSelect = document.getElementById("character_P");
+    const productImage = document.querySelector(".productImg img");
+
+    const imageMap = {
+        filgu: "images/goods/mug1.png",
+        tengu: "images/goods/mug2.png",
+        chilgu: "images/goods/mug3.png"
+    };
+
+    characterSelect.addEventListener("change", function () {
+        const selectedValue = characterSelect.value;
+
+        if (imageMap[selectedValue]) {
+            productImage.src = imageMap[selectedValue];
+        }
+    });
+});
+
+
   </script>
   </body>
 </html>

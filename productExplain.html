@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilGood 제품소개개</title>
+    <link rel="stylesheet" href="css/productExaplain.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- 파란맥주 -->
+         <div class="inner">
+        <div class="blueFilGood">
+            <!-- 맥주 이미지 -->
+            <div class="blueCan">
+                <img src="./images/product/파_파란맥주.png" alt="맥주">
+            </div>
+            <!-- 텍스트 컨테이너 -->
+            <div class="text_container_r">
+                <div class="title_blue">
+                    <h2>필굿 오리지널</h2>
+                    <h2>FIlGOOD Original</h2>
+                </div>
+                <div class="explain_s">
+                    <span>• 종류 : 기타주류(발포주)</span><span> • 알콜농도 : 4.0%</span>
+                </div>
+                <div class="title_s">
+                    <p>상쾌한 첫 맛, 부드러운 목넘김, 마지막까지 이어지는 황금 밸런스!</p>
+                </div>
+                <div class="explain_p">
+                    <span>신선한 아로마 홉의 향과 크리스탈 몰트의 깊은 단맛이 조화를 이루어</span> <span>고급스러운 풍미를 선사하는 프리미엄 발포주입니다.</span>
+                    <span>톡 쏘는 청량감과 깔끔한 끝맛이 어우러져,</span> <span>가벼운 즐거움부터 특별한 순간까지 더욱 맛있고 만족스럽게 즐길 수 있습니다.</span>
+                    
+                </div>
+
+            </div>
+        </div>
+        <!-- 초록맥주 -->
+        <div class="greenFilGood">
+    
+            <!-- 텍스트 컨테이너 -->
+            <div class="text_container gr">
+                <div class="title_blue">
+                    <h2>필굿 오리지널</h2>
+                    <h2>FIlGOOD Original</h2>
+                </div>
+                <div class="explain_s">
+                    <span>• 종류 : 기타주류(발포주)</span><span> • 알콜농도 : 4.0%</span>
+                </div>
+                <div class="title_s">
+                    <p>상쾌한 첫 맛, 부드러운 목넘김, 마지막까지 이어지는 황금 밸런스!</p>
+                </div>
+                <div class="explain_p gr1">
+                    <span>신선한 아로마 홉의 향과 크리스탈 몰트의 깊은 단맛이 조화를 이루어</span> <span>고급스러운 풍미를 선사하는 프리미엄 발포주입니다.</span>
+                    <span>톡 쏘는 청량감과 깔끔한 끝맛이 어우러져,</span> <span>가벼운 즐거움부터 특별한 순간까지 더욱 맛있고 만족스럽게 즐길 수 있습니다.</span>
+                    
+                </div>
+
+
+            </div>
+                        <!-- 맥주 이미지 -->
+                        <div class="greenCan">
+                            <img src="./images/product/맥주_초.png" alt="맥주">
+                        </div>  
+        </div>
+
+        <!-- 빨간맥주 -->
+        <div class="redFilGood">
+            <!-- 맥주 이미지 -->
+            <div class="redCan">
+                <img src="./images/product/빨맥주.png" alt="맥주">
+            </div>
+            <!-- 텍스트 컨테이너 -->
+            <div class="text_container">
+                <div class="title_blue">
+                    <h2>필굿 세븐</h2>
+                    <h2>FIlGOOD Seven</h2>
+                </div>
+                <div class="explain_s">
+                    <span>• 종류 : 기타주류(발포주)</span><span> • 알콜농도 : 7.0%</span>
+                </div>
+                <div class="title_s">
+                    <p>더 강렬하게! 더 짜릿하게! 필굿세븐!</p>
+                </div>
+                <div class="explain_p">
+                    <span>도수 7.0%의 묵직한 바디감과 깊은 몰트 향,</span>
+                    <span>강한 탄산이 어우러진 강렬한 발포주!</span>
+                    <span>부드러운 목넘김까지 갖춘 완벽한 밸런스.</span>
+                    <span>강렬한 에너지가 필요한 순간, 필굿세븐과 함께 한계를 넘어보세요!</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+const items = document.querySelectorAll(".blueFilGood, .redFilGood, .greenFilGood");
+
+items.forEach((item) => {
+    const elements = [
+        item.querySelector(".blueCan, .redCan, .greenCan"),
+        item.querySelector(".title_blue"),
+        ...item.querySelectorAll(".explain_s span"),
+        item.querySelector(".title_s"),
+        ...item.querySelectorAll(".explain_p span")
+    ].filter(Boolean); // null 값 제거
+
+    elements.forEach((el, index) => {
+        if (el) {
+            el.style.opacity = "0";
+            el.style.transform = "translateY(30px)";
+            el.style.transition = `opacity 0.6s ease ${index * 0.2}s, transform 0.6s ease ${index * 0.2}s`;
+        }
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                elements.forEach((el) => {
+                    el.style.opacity = "1";
+                    el.style.transform = "translateY(0)";
+                });
+                observer.disconnect();
+            }
+        });
+    });
+
+    observer.observe(item);
+});
+
+
+    </script>
+    
+</body>
+</html>
