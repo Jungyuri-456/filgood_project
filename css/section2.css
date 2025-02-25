@@ -11,10 +11,12 @@
 }
 .visual1Swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
+
 }
 /* 섹션2 */
 .section2 {
   width: 100%;
+  padding-bottom: 95px;
 }
 #section2-subtitle {
   padding-top: 20px;
@@ -59,7 +61,7 @@
 }
 .section2-list-mb li {
   display: block;
-  width: 50%;
+  width: 90%;
   border-radius: 10px;
   margin-bottom: 20px;
   background-color: #eff9fd;
@@ -84,6 +86,17 @@
 }
 /*반응형*/
 @media screen and (max-width: 768px) {
+  .main_title {
+    font-size: 30px;
+  }
+  .section2-list li {
+    width: 31%;
+  }
+}
+@media screen and (max-width: 390px) {
+  #section2-subtitle{
+    font-size: 15px;
+  }
   .section2-list-mb {
     display: flex;
   }
