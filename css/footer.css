@@ -46,8 +46,8 @@ html {
   display: flex;
 }
 .footerlogo {
-  margin-top: 25px;
-  margin-left: 10px;
+  margin-top: 32px;
+  margin-left: 1 0px;
 }
 .footer-bt-left ul li {
   font-size: 13px;
@@ -90,6 +90,15 @@ html {
   padding: 5px;
   margin: 5px 5px;
 }
+/*모바일*/
+.goods-main-footer-mb {
+  background-color: var(--main-blue-color);
+  width: 100%;
+  height: 372px;
+  color: var(--sub3-text-color);
+  display: none;
+}
+
 /*반응형*/
 @media screen and (max-width: 1000px) {
   .footer-top ul li {
@@ -99,5 +108,77 @@ html {
 @media screen and (max-width: 900px) {
   .footer-top ul li {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .goods-main-footer-mb {
+    display: block;
+  }
+  .goods-main-footer {
+    display: none;
+  }
+  .footer-top ul {
+    margin-left: 40px;
+  }
+  .footer-top ul li {
+    font-size: 12px;
+    padding: 0px 10px;
+  }
+  .footer-bt-left {
+    margin-left: 40px;
+  }
+  .footerlogo {
+    margin-top: 32px;
+    margin-left: 8px;
+  }
+  .footer-bt-right {
+    right: 40px;
+  }
+  .footer-bt-left ul li {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .sns {
+    padding-top: 95px;
+    margin-bottom: 6px;
+  }
+  .footer-bt-right span {
+    font-size: 20px;
+  }
+  .footer-bt-right p {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  .footer-bt-right ul li {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .goods-main-footer-mb {
+    height: 528px;
+  }
+  .footer-top ul {
+    margin-left: 20px;
+  }
+  .footer-bt {
+    position: relative;
+    display: block;
+  }
+  .footer-bt-left {
+    margin-left: 20px;
+  }
+  .footer-bt-right {
+    display: block;
+    left: 15px;
+    text-align: left;
+  }
+  .sns,
+  .footer-bt-right span,
+  .footer-bt-right p,
+  .footer-box {
+    padding-left: 15px;
+  }
+  .sns {
+    padding-top: 40px;
   }
 }
