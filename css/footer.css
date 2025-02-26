@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import url(variable.css);
+@import url(component.css);
 html {
   font-family: var(--font-family);
   color: var(--main-text-color);
@@ -158,23 +160,25 @@ html {
     height: 528px;
   }
   .footer-top ul {
-    margin-left: 20px;
+    margin-left: 15px;
   }
   .footer-bt {
     position: relative;
     display: block;
   }
   .footer-bt-left {
-    margin-left: 20px;
+    margin-left: 10px;
   }
   .footer-bt-right {
     display: block;
-    left: 15px;
+    left: 5px;
     text-align: left;
   }
   .sns,
   .footer-bt-right span,
-  .footer-bt-right p,
+  .footer-bt-right p {
+    padding-left: 20px;
+  }
   .footer-box {
     padding-left: 15px;
   }
