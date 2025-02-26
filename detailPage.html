@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="css/footer.css">
   </head>
   <body>
+
     <!-- 전체 -->
     <div class="wrap">
       <!-- 상단 -->
+       
       <header>
         <div class="header_inner">
           <!--상단바-->
@@ -35,21 +37,21 @@
           </div>
         </div>
       </header>
-<!-- 
 
-      <div class="chilguBg">
-        <img src="images/Character/dp_green_1.png" alt="칠구">
+      <!-- <div class="chilguBg">
+        <img src="images/goods/whiteLinear_bg.png" alt="칠구">
       </div> -->
 
-      
+
       <!-- 중간 -->
       <div class="main">
         <!-- 중간-선택창 -->
         <div class="contain1">
           <div class="inner">
+            
             <!-- 상품이미지 -->
             <div class="productImg">
-              <img src="images/goods/Frame 1707482013.png" alt="메인pic" />
+              <img src="images/goods/blue_cup_bg.png" alt="메인pic" />
             </div>
             <!-- 상품 선택사항 -->
             <div class="productMenu">
@@ -101,7 +103,7 @@
                 <div class="countProduct-btn">
                   <div class="countProduct-btn">
                     <button class="minus">-</button>
-                    <span class="count">1</span>
+                    <span class="count">0</span>
                     <button class="plus">+</button>
                 </div>
                 <div class="countProduct">
@@ -111,14 +113,14 @@
                 </div>
               </div>
               <div class="choose-btn">
-                <button class="cart"><a href="">장바구니</a></button>
-                <button class="purchase"><a href="">구매하기</a></button>
+                <button class="cart">장바구니</button>
+                <button class="purchase">구매하기</button>
               </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      
 
       <!-- 중간-상세페이지 -->
     <div class="explanation">
@@ -177,7 +179,6 @@
           </div>
         </div>
       </div>
-      
       <!-- 거래관련 기타 유의사항 -->
       <div class="contain4">
         <div class="inner">
@@ -185,10 +186,10 @@
           <div class="divider"></div>
           <div class="contain4D">
             <ul class="contain4D1">
-              <li>환불 기간 및 지연에 따른 배상</li>
+              <li>환불 기간 및 지연에<br> 따른 배상</li>
               <li>
                 상품불량, 상품 정보 상이 등 상품의 표시/광고 내용과 다르거나 계약 내용과 다르게 이행된 때에는 상품을
-                공급받은 날부터 3개월 이내, 그 사실을 안 날 또는 알 수 있었던 날부터 30일 이내에 반품 신청을<br />
+                공급받은 날부터 3개월 이내, 그 사실을 안 날 또는 알 수 있었던 날부터 30일 이내에 반품 신청을
                 할 수 있습니다.
                 
               </li>
@@ -274,26 +275,31 @@
             </div>
           </div>
     </div>
+  </div>
+
+
     <script>
 document.addEventListener("DOMContentLoaded", function () {
     const minusBtn = document.querySelector(".minus");
     const plusBtn = document.querySelector(".plus");
     const countSpan = document.querySelector(".count");
     const countProduct = document.querySelector(".countProduct");
+    const bundleSelect = document.getElementById("bundle");
     const cartBtn = document.querySelector(".cart");
     const purchaseBtn = document.querySelector(".purchase");
 
-    let count = 1; // 초기 수량
+    let count = 0; // 초기 수량
     const pricePerUnit = 18000; // 개당 가격
+    let bundlePrice = 0; // 추가되는 번들 가격
 
     // 가격 업데이트 함수
     function updatePrice() {
-        const totalPrice = count * pricePerUnit;
+        const totalPrice = count * pricePerUnit + bundlePrice;
         countProduct.textContent = totalPrice.toLocaleString() + "원";
     }
 
     minusBtn.addEventListener("click", function () {
-        if (count > 1) {
+        if (count > 0) {
             count--;
             countSpan.textContent = count;
             updatePrice();
@@ -306,17 +312,32 @@ document.addEventListener("DOMContentLoaded", function () {
         updatePrice();
     });
 
+    bundleSelect.addEventListener("change", function () {
+    if (bundleSelect.value === "bundleCheck") {
+        bundlePrice = 30300;
+        count++; // 번들 선택 시 개수 증가
+    } else if (bundleSelect.value === "bundleNone") {
+        bundlePrice = 0;
+    }
+    countSpan.textContent = count; // 화면에 개수 업데이트
+    updatePrice();
+});
+
     // 장바구니 또는 구매하기 버튼 클릭 시 값 초기화
     function resetValues() {
         count = 1;
+        bundlePrice = 0;
         countSpan.textContent = count;
+        bundleSelect.value = "bundleNone";
         updatePrice();
     }
 
     cartBtn.addEventListener("click", function (event) {
         event.preventDefault();
         resetValues();
+        alert("🛒 상품이 장바구니에 담겼습니다!");
     });
+
 
     purchaseBtn.addEventListener("click", function (event) {
         event.preventDefault();
@@ -327,14 +348,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// 이미지 선택시 선택한 이미지로
 document.addEventListener("DOMContentLoaded", function () {
     const characterSelect = document.getElementById("character_P");
     const productImage = document.querySelector(".productImg img");
 
     const imageMap = {
-        filgu: "images/goods/mug1.png",
-        tengu: "images/goods/mug2.png",
-        chilgu: "images/goods/mug3.png"
+        filgu: "images/goods/blue_cup_bg.png",
+        tengu: "images/goods/green_cup_bg.png",
+        chilgu: "images/goods/red_cup_bg.png"
     };
 
     characterSelect.addEventListener("change", function () {
