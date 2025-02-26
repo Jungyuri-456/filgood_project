@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/eventPage.css" />
+    <script src="js/event.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header_inner">
+        <div class="top-bar">
+          <div class="top-bar-left">
+            <a href="#">
+              <img src="images/logo/Group 1707481535.png" alt="topbarlogo" class="top-bar-logo" />
+            </a>
+            <a href="#">
+              <img src="images/logo/필굿고래.png" alt="topbarlogo-mb" class="top-bar-logo-mb" />
+            </a>
+          </div>
+          <div class="top-bar-right">
+            <ul class="bar-menu-list">
+              <li>
+                <a href="#" id="bar-text">HOME</a>
+              </li>
+              <li>
+                <a href="#section3" id="bar-text">PRODUCT</a>
+              </li>
+              <li>
+                <a href="goods.html" id="bar-text">GOODS</a>
+              </li>
+              <li>
+                <a href="#section5" id="bar-text">EVENT</a>
+              </li>
+            </ul>
+            <ul class="bar-icon-list">
+              <li>
+                <a href="#">
+                  <img src="images/icon/마이페이지.png" alt="" class="menu3" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/icon/장바구니w.png" alt="" class="menu3" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/icon/하트w.png" alt="" class="menu3" />
+                </a>
+              </li>
+              <li>
+                <a href="#"> <img src="images/icon/hamburger.png" alt="" / class="hamburger"> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="modal">
+      <div class="bg">
+        <img src="images/event/modal-bg.png" alt="이벤트" class="modal-bg" />
+        <img src="images/event/modal-bg2.png" alt="이벤트" class="modal-bg2" />
+        <img id="roulette-gift" src="images/event/roulette.png" />
+        <img id="roulette-niddle" src="images/event/niddle.png" />
+        <div id="start-rotate">
+          <img id="roulette-startBtn" src="images/event/go.png" />
+        </div>
+        
+      </div>
+
+      <div class="roulette-wrapper">
+        <div class="resultLayer">
+          <!-- 응모 결과 -->
+          <div class="result">
+            <p class="congra">축하합니다!</p>
+            <img src="images/event/result-1.png" alt="이벤트상품" id="resultImg" class="resultImg" />
+            <form name="result-box">
+              <fieldset>
+                <p class="notice">경품 발송을 위해 아래 정보를 입력해주세요. <br /></p>
+                <ul class="result-ul">
+                  <li>
+                    <label class="field" for="resultName">이름 : </label>
+                    <input type="text" class="input-box" id="resultName" name="resultName" />
+                  </li>
+                  <li>
+                    <label class="field" for="resultTel">연락처 : </label>
+                    <input type="text" class="input-box" id="resultTel" name="resultTel" />
+                  </li>
+                  <li>
+                    <label class="field" for="resultadd">주소 : </label>
+                    <input type="text" class="input-box" id="resultadd" name="resultadd" />
+                  </li>
+                  <li>
+                    <label class="field" for="resultadddetail">상세주소 : </label>
+                    <input type="text" class="input-box" id="resultadddetail" name="resultadddetail" />
+                  </li>
+                  <!-- <li>
+                            <label class="field" for="resultNumber">인증번호 : </label>
+                            <input type="text" class="input-box" id="resultNumber" name="resultNumber" />
+                          </li> -->
+                  <li class="checkbox">
+                    <input type="checkbox" id="resultInfo" name="resultInfo" />
+                    <label for="resultInfo" class="check">개인정보 수집 동의</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button type="submit" class="resultOk" id="resultOk">참여 완료</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="http://php-jestina2.azurewebsites.net/scripts/jQueryRotate.js"></script>
+    </div>
+    <!-- 하단 -->
+    <div class="goods-main-footer">
+      <div class="footer-line"></div>
+      <div class="footer_inner">
+        <div class="footer-top">
+          <ul>
+            <li>회사소개</li>
+            <li>개인정보처리방침</li>
+            <li>영상정보처리기기운영 관리방침</li>
+            <li>이용약관</li>
+            <li>청소년보호방침</li>
+            <li>입점/제휴문의</li>
+            <li>대량문의</li>
+          </ul>
+        </div>
+        <div class="footer-bt">
+          <div class="footer-bt-left">
+            <img src="images/logo/footerlogo.png" alt="footerlogo" class="footerlogo" />
+            <ul>
+              <li>대표이사: 홍길동</li>
+              <li>상호명: 오비맥주 주식회사</li>
+              <li>사업자등록번호 : 123-45-67890</li>
+              <li>개인정보보호책임자 : 홍길동</li>
+              <li>이메일: Fill_good@naver.com</li>
+              <li>Copyright ⓒ FILLGOOD DESIGNER ALL RIGHTS RESERVED.</li>
+            </ul>
+          </div>
+          <div class="footer-bt-right">
+            <ul class="sns">
+              <li>
+                <a href="https://www.instagram.com/official.obc/" target="_blank">
+                  <img src="images/icon/인스타그램.png" alt="insta" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/OrientalBrewery/" target="_blank">
+                  <img src="images/icon/페이스북.png" alt="face" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@obc.official" target="_blank">
+                  <img src="images/icon/유튜브.png" alt="yutube" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.kakaocorp.com/page/service/service/KakaoPage']" target="_blank">
+                  <img src="images/icon/카카오톡.png" alt="kakaotalk" />
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/ob_filgood" target="_blank">
+                  <img src="images/icon/X.png" alt="x" />
+                </a>
+              </li>
+            </ul>
+            <span>1234-5678</span>
+            <p>오전9시~오후6시(토요일,공휴일 휴뮤)</p>
+            <ul class="footer-box">
+              <li>1:1문의하기</li>
+              <li>자주 묻는 질문</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 하단 모바일-->
+    <div class="goods-main-footer-mb">
+      <div class="footer-line"></div>
+      <div class="footer_inner">
+        <div class="footer-top">
+          <ul>
+            <li>회사소개</li>
+            <li>개인정보처리방침</li>
+            <li>이용약관</li>
+            <li>청소년보호방침</li>
+          </ul>
+        </div>
+        <div class="footer-bt">
+          <div class="footer-bt-left">
+            <img src="images/logo/footerlogo.png" alt="footerlogo" class="footerlogo" />
+            <ul>
+              <li>대표이사: 홍길동</li>
+              <li>상호명: 오비맥주 주식회사</li>
+              <li>사업자등록번호 : 123-45-67890</li>
+              <li>개인정보보호책임자 : 홍길동</li>
+              <li>이메일: Fill_good@naver.com</li>
+              <li>Copyright ⓒ FILLGOOD DESIGNER ALL RIGHTS RESERVED.</li>
+            </ul>
+          </div>
+          <div class="footer-bt-right">
+            <ul class="sns">
+              <li>
+                <a href="https://www.instagram.com/official.obc/" target="_blank">
+                  <img src="images/icon/인스타그램.png" alt="insta" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/OrientalBrewery/" target="_blank">
+                  <img src="images/icon/페이스북.png" alt="face" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@obc.official" target="_blank">
+                  <img src="images/icon/유튜브.png" alt="yutube" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.kakaocorp.com/page/service/service/KakaoPage']" target="_blank">
+                  <img src="images/icon/카카오톡.png" alt="kakaotalk" />
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/ob_filgood" target="_blank">
+                  <img src="images/icon/X.png" alt="x" />
+                </a>
+              </li>
+            </ul>
+            <span>1234-5678</span>
+            <p>오전9시~오후6시(토요일,공휴일 휴뮤)</p>
+            <ul class="footer-box">
+              <li>1:1문의하기</li>
+              <li>자주 묻는 질문</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
