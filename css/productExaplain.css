@@ -1,6 +1,7 @@
 @charset "utf-8";
-@import url(../css/reset.css);
-@import url(../css/variable.css);
+@import url("reset.css");
+@import url("font.css");
+@import url("variable.css");
 
 .hidden {
     opacity: 0;
@@ -202,7 +203,7 @@ padding-bottom: 20px;
     align-items: flex-start;
 }
 .blueCan img {
-    width: 250px;
+    width: 200px;
     height: auto;
 }
 
@@ -214,7 +215,7 @@ padding-bottom: 20px;
     align-items: flex-start
 }
 .redCan img {
-    width: 250px;
+    width: 200px;
     height: auto;
 }
 
@@ -226,7 +227,7 @@ padding-bottom: 20px;
 }
 .greenCan img {
     padding-top: 30px;
-    width: 250px;
+    width: 200px;
     height: auto
 }
 }

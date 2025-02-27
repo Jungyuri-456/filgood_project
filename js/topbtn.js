@@ -1,6 +1,6 @@
 
 // 비주얼 버튼
-window.onload = function () {
+window.addEventListener("load", function () { 
     //  gotop버튼
     const topBtn = document.querySelector(".top-btn")
     topBtn.addEventListener("click", function(event){
@@ -10,4 +10,4 @@ window.onload = function () {
             behavior:"smooth",
         })
     })
-    }
+})
