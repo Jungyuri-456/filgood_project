@@ -47,6 +47,7 @@
   .section4 article {
     gap: 12px;
     padding: 0 20px;
+    margin-top: 45px;
   }
   .section4_article {
     width: 358px;
@@ -68,6 +69,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0 2px;
+    margin-top: 40px;
   }
   .section4_article h3 {
     font-size: 20px;

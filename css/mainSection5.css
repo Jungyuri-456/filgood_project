@@ -4,10 +4,10 @@
   background-color: var(--blue-bg-color);
 }
 .section5 article {
-  padding-left: 20px;
+ 
   display: flex;
   gap: 14px;
-  /* margin-top: 45px; */
+  margin-top: 45px;
 }
 .promosion {
   width: 632px;
