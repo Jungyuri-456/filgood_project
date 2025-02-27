@@ -4,7 +4,7 @@
   display: flex;
   gap: 20px;
   margin-top: 80px;
-  margin-bottom: 100px;
+
 }
 .section4_article {
   width: 600px;
@@ -21,11 +21,12 @@
 }
 /* section4 텍스트 */
 .section4_txt {
-  padding-left: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .section4_icon {
-  width: 28px;
-  height: 28px;
+  width: 26px;
 }
 .section4_article h3 {
   font-weight: bold;
@@ -35,9 +36,7 @@
 .section4_article p {
   font-size: 18px;
 }
-.section4_txt ul {
-  margin-top: 40px;
-}
+
 .section4_txt ul li {
   display: flex;
   margin-bottom: 20px;
@@ -54,13 +53,10 @@
     height: 270px;
   }
   .section4_article h3 {
-    font-weight: bold;
     font-size: 24px;
-    padding-bottom: 20px;
+    padding-bottom: 28px;
   }
-  .section4_txt {
-    padding-left: 5%;
-  }
+  
   .section4_txt ul li {
     margin-bottom: 12px;
   }
@@ -70,7 +66,19 @@
   .section4 article {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 0 2px;
+  }
+  .section4_article h3 {
+    font-size: 20px;
+    
+    text-align: center;
+  }
+  .section4_article p {
+    font-size: 18px;
+  }
+  .section4_txt ul li {
+    margin-bottom: 10px;
   }
   
 }

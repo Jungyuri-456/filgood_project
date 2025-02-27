@@ -37,6 +37,7 @@ html {
   padding: 0 25px;
   font-size: var(--info-font-regual);
   border-right: 1px solid #e5e5ec;
+  
 }
 .footer-top ul :last-child {
   border: none;
@@ -76,6 +77,7 @@ html {
   font-size: var(--info-font-bold);
   display: inline-block;
   margin-bottom: 10px;
+  color: #fff;
 }
 .footer-bt-right p {
   font-size: var(--info-font-regual);
