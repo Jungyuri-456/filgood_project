@@ -1,52 +1,90 @@
-// 옵션 +,-버튼 클릭
-function changeQuantity(amount) {
-    let quantityInput = document.getElementById('quantity');
-    let currentValue = parseInt(quantityInput.value);
-    let newValue = currentValue + amount;
+window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
+    const minusBtn = document.querySelector(".minus");
+    const plusBtn = document.querySelector(".plus");
+    const countSpan = document.querySelector(".count");
+    const countProduct = document.querySelector(".countProduct");
+    const bundleSelect = document.getElementById("bundle");
+    const cartBtn = document.querySelector(".cart");
+    const purchaseBtn = document.querySelector(".purchase");
 
-    if (newValue < 1) newValue = 1; // 최소 수량 제한
-    quantityInput.value = newValue;
-}
+    let count = 0; // 초기 수량
+    const pricePerUnit = 18000; // 개당 가격
+    let bundlePrice = 0; // 추가되는 번들 가격
 
-// 텍스트상자 옵션 선택
-function toggleDropdown(boxId, dropdownId, arrowId) {
-    let box = document.getElementById(boxId);
-    let dropdown = document.getElementById(dropdownId);
-    let arrow = document.getElementById(arrowId);
-
-    if (dropdown.style.display === 'block') {
-        dropdown.style.display = 'none';
-        arrow.innerText = '∨';
-        box.classList.remove('active');
-    } else {
-        closeAllDropdowns();
-        dropdown.style.display = 'block';
-        arrow.innerText = 'ᴧ';
-        box.classList.add('active');
+    // 가격 업데이트 함수
+    function updatePrice() {
+        const totalPrice = count * pricePerUnit + bundlePrice;
+        countProduct.textContent = totalPrice.toLocaleString() + "원";
     }
-}
 
-function selectOption(textId, value, arrowId, boxId) {
-    document.getElementById(textId).innerText = value;
-    document.getElementById(arrowId).innerText = '∨';
-    document.getElementById(boxId).classList.remove('active');
-    document.getElementById(boxId).querySelector('.dropdown').style.display = 'none';
-}
+    minusBtn.addEventListener("click", function () {
+        if (count > 0) {
+            count--;
+            countSpan.textContent = count;
+            updatePrice();
+        }
+    });
 
-function closeAllDropdowns() {
-    document.querySelectorAll('.dropdown').forEach(dropdown => {
-        dropdown.style.display = 'none';
+    plusBtn.addEventListener("click", function () {
+        count++;
+        countSpan.textContent = count;
+        updatePrice();
     });
-    document.querySelectorAll('.option-box').forEach(box => {
-        box.classList.remove('active');
-    });
-    document.querySelectorAll('.arrow').forEach(arrow => {
-        arrow.innerText = '∨';
-    });
-}
 
-document.addEventListener('click', function(event) {
-    if (!event.target.closest('.option-box')) {
-        closeAllDropdowns();
+    bundleSelect.addEventListener("change", function () {
+    if (bundleSelect.value === "bundleCheck") {
+        bundlePrice = 30300;
+        count++; // 번들 선택 시 개수 증가
+    } else if (bundleSelect.value === "bundleNone") {
+        bundlePrice = 0;
     }
+    countSpan.textContent = count; // 화면에 개수 업데이트
+    updatePrice();
 });
+
+    // 장바구니 또는 구매하기 버튼 클릭 시 값 초기화
+    function resetValues() {
+        count = 1;
+        bundlePrice = 0;
+        countSpan.textContent = count;
+        bundleSelect.value = "bundleNone";
+        updatePrice();
+    }
+
+    cartBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        resetValues();
+        alert("🛒 상품이 장바구니에 담겼습니다!");
+    });
+
+
+    purchaseBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        resetValues();
+    });
+
+    updatePrice(); // 초기 가격 설정
+});
+
+
+// 이미지 선택시 선택한 이미지로
+document.addEventListener("DOMContentLoaded", function () {
+    const characterSelect = document.getElementById("character_P");
+    const productImage = document.querySelector(".productImg img");
+
+    const imageMap = {
+        filgu: "images/goods/blue_cup_bg.png",
+        tengu: "images/goods/green_cup_bg.png",
+        chilgu: "images/goods/red_cup_bg.png"
+    };
+
+    characterSelect.addEventListener("change", function () {
+        const selectedValue = characterSelect.value;
+
+        if (imageMap[selectedValue]) {
+            productImage.src = imageMap[selectedValue];
+        }
+    });
+});
+}
