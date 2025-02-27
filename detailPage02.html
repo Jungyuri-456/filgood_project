@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/detailPage.css" />
+    <link rel="stylesheet" href="css/variable.css" />
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/topbtn.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="js/topbtn.js"></script>
+    <script src="js/detail.js"></script>
+  </head>
+  <body>
+    <div class="top-btn-wrap">
+      <a href="eventPage.html" class="caht-btn">
+        <img src="images/blue_3d.png" alt="chat" />
+        <span>룰렛 돌리러 갈래?</span>
+      </a>
+      <a href="#" class="top-btn">
+        <img src="images/top-btn.png" alt="top-btn" class="top-btn-img" />
+      </a>
+    </div>
+
+    <!-- 전체 -->
+    <div class="wrap">
+      <!-- 상단 -->
+      <header>
+        <div class="header_inner">
+          <div class="top-bar">
+            <div class="top-bar-left">
+              <a href="#">
+                <img src="images/logo/Group 1707481535.png" alt="topbarlogo" class="top-bar-logo" />
+              </a>
+              <a href="#">
+                <img src="images/logo/필굿고래.png" alt="topbarlogo-mb" class="top-bar-logo-mb" />
+              </a>
+            </div>
+            <div class="top-bar-right">
+              <ul class="bar-menu-list">
+                <li>
+                  <a href="#" id="bar-text">HOME</a>
+                </li>
+                <li>
+                  <a href="#section3" id="bar-text">PRODUCT</a>
+                </li>
+                <li>
+                  <a href="goods.html" id="bar-text">GOODS</a>
+                </li>
+                <li>
+                  <a href="#section5" id="bar-text">EVENT</a>
+                </li>
+              </ul>
+              <ul class="bar-icon-list">
+                <li>
+                  <a href="#">
+                    <img src="images/icon/마이페이지.png" alt="" class="menu3" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/icon/장바구니w.png" alt="" class="menu3" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/icon/하트w.png" alt="" class="menu3" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#"> <img src="images/icon/hamburger.png" alt="" / class="hamburger"> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- <div class="chilguBg">
+        <img src="images/goods/whiteLinear_bg.png" alt="칠구">
+      </div> -->
+
+
+      <!-- 중간 -->
+      <div class="main">
+        <!-- 중간-선택창 -->
+        <div class="contain1">
+          <div class="inner">
+            
+            <!-- 상품이미지 -->
+            <div class="productImg">
+              <img src="images/newGoods/hat_w_y.png" alt="메인pic" />
+            </div>
+            <!-- 상품 선택사항 -->
+            <div class="productMenu">
+              <!-- 상품 선택사항-상품명, 가격, 하트,공유 -->
+              <div class="productMenu-top">
+                <!-- 상품명 -->
+                <div class="productName"><h2>머리에쓰라-굿</h2></div>
+                <div class="productPriceShare">
+                  <!-- 상품가격 -->
+                  <div class="productPrice">
+                    <span>20,000원</span>
+                  </div>
+                  <!-- 상품공유 -->
+                  <div class="productShare">
+                    <ul class="Picon">
+                      <li>
+                        <a href="#"><img src="images/icon/하트b.png" alt="하트" /></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="images/icon/공유b.png" alt="공유" /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- 분단줄 -->
+              <hr />
+              <ul class="optionBar">
+                <li>
+                  <select name="character_P" id="character_P">
+                    <option>[필수] 옵션을 선택 해주세요</option>
+                    <option value="filgu">[화이트] 머리에쓰라-굿</option>
+                    <option value="filgu">[블루] 머리에쓰라-굿</option>
+                  </select>
+                </li>
+                </li>
+                <li>
+                  <select name="bundle" id="bundle">
+                    <option>[필수] 구성을 선택 해주세요</option>
+                    <option value="bundleCheck">[세트] 화이트 + 블루 (18,000원 추가)</option>
+                    <option value="bundleNone">선택안함</option>
+                  </select>
+                </li>
+              </ul>
+              <hr>
+              <div class="totalCount">
+                <h2>TOTAL</h2>
+                <div class="countProduct-btn">
+                  <div class="countProduct-btn">
+                    <button class="minus">-</button>
+                    <span class="count">0</span>
+                    <button class="plus">+</button>
+                </div>
+                <div class="countProduct">
+                  18,000원
+                </div>
+                
+                </div>
+              </div>
+              <div class="choose-btn">
+                <button class="cart">장바구니</button>
+                <button class="purchase">구매하기</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+      <!-- 중간-상세페이지 -->
+    <div class="explanation">
+      <div class="contain2">
+        <div class="inner">
+          <!-- 제품이미지 : 컵들 -->
+          <ul class="cups">
+            <li class="blue">
+              <a href="#"
+                ><img src="images/newGoods/hat_w.png" alt="blue" />
+                <span>필구</span>
+              </a>
+            </li>
+            <li class="green">
+              <a href="#"><img src="images/newGoods/hat_b.png" alt="green" /> <span>텐구</span></a>
+            </li>
+          </ul>
+          <!-- 제품설명 -->
+          <div class="productDetail">
+            <span>필~굿한 시원함, 필~굿하게 스타일 업!</span>
+            <span>필굿처럼 가볍고 자유롭게</span>
+            <span>가볍게 쓰고, 가볍게 즐겨보자!</span>
+            <span>스타일과 기분까지 굿!</span>
+          </div>
+        </div>
+      </div>
+      <!-- 중간-제품사항 -->
+      <div class="contain3">
+        <div class="inner">
+          <h2>상품제공정보고시</h2>
+          <div class="divider"></div>
+          
+          <div class="contain3D">
+
+            <ul class="contain3D1">
+              <li>종류</li>
+              <li>제품 주소재</li>
+              <li>용량</li>
+              <li>제조국</li>
+              <li>특징</li>
+            </ul>
+
+            <ul class="contain3D2">
+              <li>모자</li>
+              <li>면혼방</li>
+              <li>92(M/IVORY)</li>
+              <li>대한민국</li>
+              <li>물기나 오염물이 묻으면 젖은 헝겁으로 닦아주세요. 손세탁을 추천드리며 건조기 사용은 자제해 주세요</li>
+            </ul>
+          </div>
+          <div class="gray-line">
+            <hr>
+          </div>
+        </div>
+      </div>
+      <!-- 거래관련 기타 유의사항 -->
+      <div class="contain4">
+        <div class="inner">
+          <h2>거래관련 기타 유의사항</h2>
+          <div class="divider"></div>
+          <div class="contain4D">
+            <ul class="contain4D1">
+              <li>환불 기간 및 지연에<br> 따른 배상</li>
+              <li>
+                상품불량, 상품 정보 상이 등 상품의 표시/광고 내용과 다르거나 계약 내용과 다르게 이행된 때에는 상품을
+                공급받은 날부터 3개월 이내, 그 사실을 안 날 또는 알 수 있었던 날부터 30일 이내에 반품 신청을
+                할 수 있습니다.
+                
+              </li>
+            </ul>
+            
+          </div>
+          <hr>
+        </div>
+
+      </div>
+      </div>
+      <!-- 하단 -->
+      <div class="goods-main-footer">
+        <div class="footer-line"></div>
+        <div class="footer_inner">
+          <div class="footer-top">
+            <ul>
+              <li>회사소개</li>
+              <li>개인정보처리방침</li>
+              <li>영상정보처리기기운영 관리방침</li>
+              <li>이용약관</li>
+              <li>청소년보호방침</li>
+              <li>입점/제휴문의</li>
+              <li>대량문의</li>
+            </ul>
+          </div>
+          <div class="footer-bt">
+            <div class="footer-bt-left">
+              <img src="images/logo/footerlogo.png" alt="footerlogo" class="footerlogo" />
+              <ul>
+                <li>대표이사: 홍길동</li>
+                <li>상호명: 오비맥주 주식회사</li>
+                <li>사업자등록번호 : 123-45-67890</li>
+                <li>개인정보보호책임자 : 홍길동</li>
+                <li>이메일: Fill_good@naver.com</li>
+                <li>Copyright ⓒ FILLGOOD DESIGNER ALL RIGHTS RESERVED.</li>
+              </ul>
+            </div>
+            <div class="footer-bt-right">
+              <ul class="sns">
+                <li>
+                  <a href="https://www.instagram.com/official.obc/" target="_blank">
+                    <img src="images/icon/인스타그램.png" alt="insta" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/OrientalBrewery/" target="_blank">
+                    <img src="images/icon/페이스북.png" alt="face" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/@obc.official" target="_blank">
+                    <img src="images/icon/유튜브.png" alt="yutube" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.kakaocorp.com/page/service/service/KakaoPage']" target="_blank">
+                    <img src="images/icon/카카오톡.png" alt="kakaotalk" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://x.com/ob_filgood" target="_blank">
+                    <img src="images/icon/X.png" alt="x" />
+                  </a>
+                </li>
+              </ul>
+              <span>1234-5678</span>
+              <p>오전9시~오후6시(토요일,공휴일 휴뮤)</p>
+              <ul class="footer-box">
+                <li>1:1문의하기</li>
+                <li>자주 묻는 질문</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 하단 모바일-->
+      <div class="goods-main-footer-mb">
+        <div class="footer-line"></div>
+        <div class="footer_inner">
+          <div class="footer-top">
+            <ul>
+              <li>회사소개</li>
+              <li>개인정보처리방침</li>
+              <li>이용약관</li>
+              <li>청소년보호방침</li>
+            </ul>
+          </div>
+          <div class="footer-bt">
+            <div class="footer-bt-left">
+              <img src="images/logo/footerlogo.png" alt="footerlogo" class="footerlogo" />
+              <ul>
+                <li>대표이사: 홍길동</li>
+                <li>상호명: 오비맥주 주식회사</li>
+                <li>사업자등록번호 : 123-45-67890</li>
+                <li>개인정보보호책임자 : 홍길동</li>
+                <li>이메일: Fill_good@naver.com</li>
+                <li>Copyright ⓒ FILLGOOD DESIGNER ALL RIGHTS RESERVED.</li>
+              </ul>
+            </div>
+            <div class="footer-bt-right">
+              <ul class="sns">
+                <li>
+                  <a href="https://www.instagram.com/official.obc/" target="_blank">
+                    <img src="images/icon/인스타그램.png" alt="insta" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/OrientalBrewery/" target="_blank">
+                    <img src="images/icon/페이스북.png" alt="face" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/@obc.official" target="_blank">
+                    <img src="images/icon/유튜브.png" alt="yutube" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.kakaocorp.com/page/service/service/KakaoPage']" target="_blank">
+                    <img src="images/icon/카카오톡.png" alt="kakaotalk" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://x.com/ob_filgood" target="_blank">
+                    <img src="images/icon/X.png" alt="x" />
+                  </a>
+                </li>
+              </ul>
+              <span>1234-5678</span>
+              <p>오전9시~오후6시(토요일,공휴일 휴뮤)</p>
+              <ul class="footer-box">
+                <li>1:1문의하기</li>
+                <li>자주 묻는 질문</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+  
+
+
+  </body>
+</html>

@@ -158,7 +158,8 @@ $(document).ready(function () {
       // 사용자가 확인을 눌렀을 때만 경품 발송 진행
       if (confirmation) {
         // 여기에 경품 발송 등의 작업을 수행하는 코드를 추가할 수 있습니다.
-        alert("이벤트 참여 완료! 메인페이지로 이동합니다.");
+        alert("응모해주셔서 감사합니다!");
+        $(".resultLayer").css("display", "none");
         // window.location.href = "index.html";
         // // 모달 닫기
         // modalClose();

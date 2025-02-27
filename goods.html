@@ -11,9 +11,21 @@
     <script src="js/goods.js"></script>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/topbtn.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/topbtn.js"></script>
   </head>
   <body>
+        <!-- 필구 탑 이벤트버튼 -->
+        <div class="top-btn-wrap">
+          <a href="eventPage.html" class="caht-btn">
+            <img src="images/blue_3d.png" alt="chat" />
+            <span>룰렛 돌리러 갈래?</span>
+          </a>
+          <a href="#" class="top-btn">
+            <img src="images/top-btn.png" alt="top-btn" class="top-btn-img" />
+          </a>
+        </div>
     <!-- 상단 -->
     <header>
       <div class="header_inner">
@@ -22,37 +34,43 @@
             <a href="#">
               <img src="images/logo/Group 1707481535.png" alt="topbarlogo" class="top-bar-logo" />
             </a>
+            <a href="#">
+              <img src="images/logo/필굿고래.png" alt="topbarlogo-mb" class="top-bar-logo-mb" />
+            </a>
           </div>
           <div class="top-bar-right">
             <ul class="bar-menu-list">
               <li>
-                <a href="#" id="bar-text">Home</a>
+                <a href="index.html" id="bar-text">HOME</a>
               </li>
               <li>
-                <a href="#" id="bar-text">Product</a>
+                <a href="#section3" id="bar-text">PRODUCT</a>
               </li>
               <li>
-                <a href="#" id="bar-text">Goods</a>
+                <a href="goods.html" id="bar-text">GOODS</a>
               </li>
               <li>
-                <a href="#" id="bar-text">Event</a>
+                <a href="#section5" id="bar-text">EVENT</a>
               </li>
             </ul>
             <ul class="bar-icon-list">
               <li>
                 <a href="#">
-                  <img src="images/icon/마이페이지.png" alt="" />
+                  <img src="images/icon/마이페이지.png" alt="" class="menu3" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="images/icon/장바구니w.png" alt="" />
+                  <img src="images/icon/장바구니w.png" alt="" class="menu3" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="images/icon/하트w.png" alt="" />
+                  <img src="images/icon/하트w.png" alt="" class="menu3" />
                 </a>
+              </li>
+              <li>
+                <a href="#"> <img src="images/icon/hamburger.png" alt="" / class="hamburger"> </a>
               </li>
             </ul>
           </div>
@@ -145,7 +163,7 @@
           </div>
           <div class="swiper-slide">
             <div class="goods-pic">
-              <img src="images/goods/go-sw03.png" alt="shirt" />
+              <img src="images/goods/go-sw04.png" alt="glass" />
             </div>
             <ul class="hover-icon">
               <li>
@@ -164,7 +182,7 @@
           </div>
           <div class="swiper-slide">
             <div class="goods-pic">
-              <img src="images/goods/go-sw03.png" alt="shirt" />
+              <img src="images/goods/go-sw05.png" alt="note" />
             </div>
             <ul class="hover-icon">
               <li>
@@ -195,7 +213,7 @@
         <img src="images/logo/kakao_search.png" alt="kakao_search" class="kakao_search" />
       </div>
     </div>
-    <!--footer-->
+    <!-- 하단 -->
     <div class="goods-main-footer">
       <div class="footer-line"></div>
       <div class="footer_inner">
@@ -229,25 +247,83 @@
                   <img src="images/icon/인스타그램.png" alt="insta" />
                 </a>
               </li>
-
               <li>
                 <a href="https://www.facebook.com/OrientalBrewery/" target="_blank">
                   <img src="images/icon/페이스북.png" alt="face" />
                 </a>
               </li>
-
               <li>
                 <a href="https://www.youtube.com/@obc.official" target="_blank">
                   <img src="images/icon/유튜브.png" alt="yutube" />
                 </a>
               </li>
-
               <li>
                 <a href="https://www.kakaocorp.com/page/service/service/KakaoPage']" target="_blank">
                   <img src="images/icon/카카오톡.png" alt="kakaotalk" />
                 </a>
               </li>
-
+              <li>
+                <a href="https://x.com/ob_filgood" target="_blank">
+                  <img src="images/icon/X.png" alt="x" />
+                </a>
+              </li>
+            </ul>
+            <span>1234-5678</span>
+            <p>오전9시~오후6시(토요일,공휴일 휴뮤)</p>
+            <ul class="footer-box">
+              <li>1:1문의하기</li>
+              <li>자주 묻는 질문</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 하단 모바일-->
+    <div class="goods-main-footer-mb">
+      <div class="footer-line"></div>
+      <div class="footer_inner">
+        <div class="footer-top">
+          <ul>
+            <li>회사소개</li>
+            <li>개인정보처리방침</li>
+            <li>이용약관</li>
+            <li>청소년보호방침</li>
+          </ul>
+        </div>
+        <div class="footer-bt">
+          <div class="footer-bt-left">
+            <img src="images/logo/footerlogo.png" alt="footerlogo" class="footerlogo" />
+            <ul>
+              <li>대표이사: 홍길동</li>
+              <li>상호명: 오비맥주 주식회사</li>
+              <li>사업자등록번호 : 123-45-67890</li>
+              <li>개인정보보호책임자 : 홍길동</li>
+              <li>이메일: Fill_good@naver.com</li>
+              <li>Copyright ⓒ FILLGOOD DESIGNER ALL RIGHTS RESERVED.</li>
+            </ul>
+          </div>
+          <div class="footer-bt-right">
+            <ul class="sns">
+              <li>
+                <a href="https://www.instagram.com/official.obc/" target="_blank">
+                  <img src="images/icon/인스타그램.png" alt="insta" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/OrientalBrewery/" target="_blank">
+                  <img src="images/icon/페이스북.png" alt="face" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@obc.official" target="_blank">
+                  <img src="images/icon/유튜브.png" alt="yutube" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.kakaocorp.com/page/service/service/KakaoPage']" target="_blank">
+                  <img src="images/icon/카카오톡.png" alt="kakaotalk" />
+                </a>
+              </li>
               <li>
                 <a href="https://x.com/ob_filgood" target="_blank">
                   <img src="images/icon/X.png" alt="x" />

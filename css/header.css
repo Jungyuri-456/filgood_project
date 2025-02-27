@@ -22,7 +22,7 @@ header {
   width: 18%;
   /* height: 90px; */
   display: flex;
-  align-items: center;
+  align-items: center; /*이거 밑으로 좀 치우치게 바꿔야 함*/
 }
 
 .top-bar-left img {
@@ -43,6 +43,9 @@ header {
   font-weight: 500;
   color: #fff;
   padding-left: 30px;
+}
+.bar-menu-list li a:hover {
+  color: var(--sub-yellow-color);
 }
 .bar-icon-list {
   display: flex;
