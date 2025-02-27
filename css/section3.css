@@ -4,7 +4,7 @@
   background-color: #eff9fd;
 }
 #section3-title {
-  margin-bottom: 56px;
+  margin-bottom: 80px;
 }
 .section3-visual {
   width: 100%;
@@ -83,6 +83,9 @@
 }
 /*반응형*/
 @media screen and (max-width: 768px) {
+  #section3-title {
+    margin-bottom: 45px;
+  }
   .section3-visual {
     flex-direction: column-reverse;
     align-items: center;
@@ -98,6 +101,9 @@
   }
 }
 @media screen and (max-width: 390px) {
+  #section3-title {
+    margin-bottom: 45px;
+  }
   .section3 .article {
     width: 366px;
     height: 366px;

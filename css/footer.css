@@ -8,19 +8,19 @@ html {
 .footer_inner {
   max-width: 1580px;
   margin: 0 auto;
+  
 }
 /*푸터*/
 /*푸터 위*/
 .goods-main-footer {
+  
   background-color: var(--main-blue-color);
   width: 100%;
   height: 372px;
   color: var(--sub3-text-color);
 }
-.footer-line {
-  position: absolute;
-  width: 100%;
-  height: 76px;
+.footer_line{
+
   border-bottom: 1px solid #f1f1f5;
 }
 .footer-top {
@@ -28,6 +28,10 @@ html {
   height: 76px;
   display: flex;
   align-items: center;
+  
+}
+#footer_info{
+  color: #fff;
 }
 .footer-top ul {
   display: flex;
@@ -39,7 +43,11 @@ html {
   border-right: 1px solid #e5e5ec;
   
 }
-.footer-top ul :last-child {
+.footer-top ul li a{
+  color: var(--sub3-text-color);
+}
+
+.footer-top ul li:last-child {
   border: none;
 }
 
@@ -50,23 +58,26 @@ html {
 }
 .footerlogo {
   margin-top: 32px;
-  margin-left: 1 0px;
+  margin-left: 20px;
 }
 .footer-bt-left ul li {
   font-size: 13px;
-  margin: 15px;
+  margin: 15px 20px;
 }
+/* 오른쪽 */
 .footer-bt-right {
   display: block;
   position: absolute;
-  right: 0px;
+  right: 20px;
   text-align: right;
 }
 .sns {
+  
   padding-top: 100px;
   display: flex;
+  justify-content: flex-end;
   margin-bottom: 10px;
-  padding-left: 40px;
+  /* padding-left: 40px; */
   gap: 20px;
 }
 
@@ -93,6 +104,9 @@ html {
   border: 1px solid;
   padding: 5px;
   margin: 5px 5px;
+}
+.footer-box li a{
+  color: var(--sub3-text-color);
 }
 /*모바일*/
 .goods-main-footer-mb {
@@ -121,23 +135,18 @@ html {
   .goods-main-footer {
     display: none;
   }
-  .footer-top ul {
-    margin-left: 40px;
-  }
+  
   .footer-top ul li {
     font-size: 12px;
     padding: 0px 10px;
+    
   }
-  .footer-bt-left {
-    margin-left: 40px;
-  }
+  
   .footerlogo {
     margin-top: 32px;
-    margin-left: 8px;
+    
   }
-  .footer-bt-right {
-    right: 40px;
-  }
+  
   .footer-bt-left ul li {
     font-size: 12px;
     margin-bottom: 8px;
@@ -155,6 +164,7 @@ html {
   }
   .footer-bt-right ul li {
     font-size: 12px;
+    
   }
 }
 @media screen and (max-width: 390px) {
@@ -186,5 +196,6 @@ html {
   }
   .sns {
     padding-top: 40px;
+    justify-content: flex-start;
   }
 }
