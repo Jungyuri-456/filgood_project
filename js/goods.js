@@ -6,15 +6,23 @@ window.onload = function () {
     },
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 1,
 
     breakpoints: {
-      768: {
+      390: {
         slidesPerView: 1,
-        spaceBetween: 0,
+        spaceBetween: 1,
+      },
+      768: {
+        slidesPerView: 1.5,
+        spaceBetween: 1,
+      },
+      900: {
+        slidesPerView: 2,
+        spaceBetween: 5,
       },
       1200: {
-        slidesPerView: 2,
+        slidesPerView: 2.5,
         spaceBetween: 5,
       },
       1500: {
