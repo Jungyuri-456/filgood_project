@@ -167,7 +167,7 @@ html {
     
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 415px) {
   .goods-main-footer-mb {
     height: 528px;
   }

@@ -250,7 +250,7 @@ header {
     top: 15%;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 415px) {
   .main-visual-left {
     width: 72%;
     height: 240px;

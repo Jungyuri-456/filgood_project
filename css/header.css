@@ -136,7 +136,7 @@ nav > ul > a {
     margin-right: 20px;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 415px) {
   .menu3 {
     display: none;
   }

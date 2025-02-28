@@ -245,7 +245,7 @@
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 415px) {
   #roulette-gift {
     top: 20%;
   }
