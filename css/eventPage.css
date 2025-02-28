@@ -9,70 +9,64 @@
   width: 100%;
   position: relative;
 }
-.modal-bg {
-  width: 100%;
-}
 .modal-bg2 {
   display: none;
   top: 0;
   left: 0;
   width: 100%;
 }
+.bg{
+  width: 100%;
+  background-color: #aaa;
+}
 /* 위치 */
-
+#r_img{
+  position: relative;
+  width: 100%;
+}
+#r_img>img{
+  width: 100%;
+}
 #r_event{
-  width: 500px;
-  height: 500px;
- background-color: #67d9fd;
- position: absolute;
- top: 12%;
- left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+  width: 50%;
+}
+#r_r{
+  width: 100%;
 }
 /* 룰렛 */
 
 .roulette-wrapper {
   position: relative;
   width: 100%;
-  
-  
-}
-
-#start-rotate {
- 
-  
 }
 #roulette-gift {
   z-index: 2;
   width: 100%;
-  /* max-width: 880px; */
-  position: absolute;
+  scale: 1.2;
   top: 0;
   left: 0;
-  
-  
 }
 
 #roulette-niddle {
   z-index: 3;
-  width: 7%;
-  /* max-width: 30px; */
+  width: 9%;
   position: absolute;
-  /* top: -6300%; */
-  top: 10%;
-  left: 50%;
+  top: 2%;
+  left: 49%;
   transform: translateX(-51%);
 }
 #roulette-startBtn {
   z-index: 3;
   cursor: pointer;
-  width: 10%;
-  /* max-width: 132px; */
+  width: 14%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* top: 65.5%; */
-  /* left: 27.7%; */
   display: block;
 }
 @keyframes rotateAnimation {
@@ -85,9 +79,7 @@
     transform: rotate(1980deg); /* 360 * 5 + 180 예시 */
   }
 }
-
 /* 이벤트 결과창 */
-
 .resultLayer {
   width: 450px;
   height: 700px;
@@ -176,7 +168,6 @@
   text-align: center;
   line-height: 1.3;
 }
-
 .resultOk {
   display: block;
   width: 150px;
@@ -200,20 +191,13 @@
   .modal-bg {
     display: none;
   }
-  #roulette-gift {
-    width: 95%;
+  #r_event{
+    position: absolute;
     top: 30%;
-    left: 3%;
-  }
-  #roulette-niddle {
-    width: 7%;
-    top: 36%;
-    left: 47%;
-  }
-  #roulette-startBtn {
-    width: 13%;
-    top: 62.5%;
-    left: 44.5%;
+   
+    left: 50%;
+    transform: translateX(-51%);
+    width: 85%;
   }
   .resultLayer {
     width: 360px;
@@ -246,18 +230,7 @@
   }
 }
 @media screen and (max-width: 415px) {
-  #roulette-gift {
-    top: 20%;
-  }
-  #roulette-niddle {
-    top: 23%;
-    left: 46.5%;
-  }
-  #roulette-startBtn {
-    width: 13%;
-    top: 35.8%;
-    left: 44.5%;
-  }
+
   .resultLayer {
     width: 340px;
     height: 510px;
