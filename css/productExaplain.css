@@ -231,3 +231,25 @@ padding-bottom: 20px;
     height: auto
 }
 }
+
+@media (max-width: 390px){
+    .blueCan img {
+        width: 100px;
+        height: auto;
+    }
+    .redCan img {
+        width: 100px;
+        height: 200px;
+    }
+    .greenCan img {
+        padding-top: 30px;
+        width: 100px;
+        height: auto
+    }
+    .title_s span{
+        font-size: 18px;
+    }
+    .explain_p{
+        gap: 1px;
+    }
+}
