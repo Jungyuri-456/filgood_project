@@ -118,16 +118,6 @@ header {
   font-size: var(--product-font-regual);
   font-weight: bold;
 }
-
-.swiper-button-next {
-  /* position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%) translateX(20px);
-     */
-     
-     
-}
 #goods_btn{
   width: 70%;
   position: absolute;
