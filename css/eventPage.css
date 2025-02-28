@@ -7,6 +7,7 @@
 } */
 .madal {
   width: 100%;
+  position: relative;
 }
 .modal-bg {
   width: 100%;
@@ -17,41 +18,61 @@
   left: 0;
   width: 100%;
 }
+/* 위치 */
 
+#r_event{
+  width: 500px;
+  height: 500px;
+ background-color: #67d9fd;
+ position: absolute;
+ top: 12%;
+ left: 0;
+}
 /* 룰렛 */
+
 .roulette-wrapper {
   position: relative;
   width: 100%;
+  
+  
 }
+
 #start-rotate {
+ 
+  
 }
 #roulette-gift {
   z-index: 2;
-  width: 60%;
+  width: 100%;
   /* max-width: 880px; */
   position: absolute;
-
-  top: 12%;
-  left: 1.5%;
+  top: 0;
+  left: 0;
+  
+  
 }
 
 #roulette-niddle {
   z-index: 3;
-  width: 4.5%;
+  width: 7%;
   /* max-width: 30px; */
   position: absolute;
   /* top: -6300%; */
-  top: 22%;
-  left: 29.2%;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-51%);
 }
 #roulette-startBtn {
   z-index: 3;
   cursor: pointer;
-  width: 8%;
+  width: 10%;
   /* max-width: 132px; */
   position: absolute;
-  top: 65.5%;
-  left: 27.7%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* top: 65.5%; */
+  /* left: 27.7%; */
   display: block;
 }
 @keyframes rotateAnimation {
