@@ -2,6 +2,7 @@
 @import url("reset.css");
 @import url("variable.css");
 @import url("component.css");
+@import url("//js/header.js");
 html {
   font-family: var(--font-family);
   color: var(--main-text-color);
@@ -21,7 +22,7 @@ header {
 }
 .top-bar-left {
   width: 14%;
- 
+
   display: flex;
 }
 .top-bar-logo {
@@ -115,18 +116,22 @@ nav > ul > a {
   }
   .bar-menu-list {
     display: none;
-    
   }
   .bar-icon-list {
     align-items: center;
     /* line-height: 20px; */
+    position: relative;
+    top: 0px;
   }
   .bar-icon-list img {
     width: var(--icon-size-medium);
   }
   .hamburger {
     display: inline-block;
+    position: relative;
+    top: 0px;
   }
+
   .bar-icon-list {
     margin-right: 20px;
   }
@@ -140,7 +145,7 @@ nav > ul > a {
     /* width: 95px; */
     height: 60px;
     position: relative;
-    top: -10px;
+    top: 0px;
   }
   .top-bar-logo {
     display: none;
