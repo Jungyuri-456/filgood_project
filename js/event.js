@@ -140,17 +140,9 @@ $(document).ready(function () {
       var name = $("#resultName").val();
       var tel = $("#resultTel").val();
       var add = $("#resultadd").val();
-      var adddetail = $("#resultadddetail").val();
       // 입력된 정보 확인
       var confirmationMessage =
-        "이름: " +
-        name +
-        "\n연락처: " +
-        tel +
-        "\n주소: " +
-        add +
-        adddetail +
-        "\n위 정보로 경품 발송을 진행하시겠습니까?";
+        "이름: " + name + "\n연락처: " + tel + "\n주소: " + add + "\n위 정보로 경품 발송을 진행하시겠습니까?";
 
       // 경품 발송 정보 확인을 위한 알림창 표시
       var confirmation = confirm(confirmationMessage);
@@ -169,6 +161,4 @@ $(document).ready(function () {
       alert("개인정보 수집에 동의해주세요.");
     }
   });
-
-
 });
