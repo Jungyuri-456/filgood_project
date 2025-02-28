@@ -19,6 +19,7 @@ header {
 .top-bar {
   width: 100%;
   display: flex;
+  padding-left: 20px;
 }
 .top-bar-left {
   width: 14%;
@@ -39,13 +40,19 @@ header {
 .bar-menu-list {
   display: flex;
   line-height: 55px;
+  gap: 28px;
+  padding-top: 5px;
+  
   /* justify-content: center; */
 }
 .bar-menu-list li a {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: bold;
   color: #fff;
-  padding-left: 30px;
+  /* padding-left: 30px; */
+  
+  
+  
 }
 .bar-menu-list li a:hover {
   color: var(--sub-yellow-color);
@@ -54,7 +61,7 @@ header {
   display: flex;
   position: relative;
   top: 10px;
-  padding-left: 60px;
+  padding-left: 24px;
 }
 .bar-icon-list li {
   padding-left: 20px;
@@ -69,18 +76,23 @@ header {
   display: none;
 }
 /*햄버거 바에 호버 했을 때*/
+.gnbClose img{
+  width: 32px;
+  height: 32px;
+}
 nav {
+  
   display: none;
   position: absolute;
   z-index: 9999;
   width: 100%;
-  top: 0%;
-  left: 0%;
+  top: 0;
+  right: 0;
   text-align: center;
   color: #fff;
   background-color: var(--main-blue-color);
   /* font-size: var(--title-font); */
-  font-size: 36px;
+  font-size: 24px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -89,6 +101,7 @@ nav ul li {
 }
 nav ul li a {
   color: #fff;
+  font-weight: bold;
 }
 nav ul li a:hover {
   color: var(--sub-yellow-color);
@@ -106,7 +119,7 @@ nav > ul > a {
     height: 50px;
   }
   .top-bar-left {
-    margin-left: 20px;
+    
     position: relative;
     top: -5px;
   }
