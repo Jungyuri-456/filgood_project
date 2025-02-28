@@ -70,7 +70,7 @@
   }
 }
 /* 모바일 */
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 415px) {
   .section2-list {
     flex-direction: column;
     align-items: center;
